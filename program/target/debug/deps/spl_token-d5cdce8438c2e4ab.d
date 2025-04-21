@@ -1,0 +1,12 @@
+/workspaces/research-token/program/target/debug/deps/libspl_token-d5cdce8438c2e4ab.so: /root/.cargo/registry/src/index.crates.io-6f17d22bba15001f/spl-token-4.0.3/src/lib.rs /root/.cargo/registry/src/index.crates.io-6f17d22bba15001f/spl-token-4.0.3/src/error.rs /root/.cargo/registry/src/index.crates.io-6f17d22bba15001f/spl-token-4.0.3/src/instruction.rs /root/.cargo/registry/src/index.crates.io-6f17d22bba15001f/spl-token-4.0.3/src/native_mint.rs /root/.cargo/registry/src/index.crates.io-6f17d22bba15001f/spl-token-4.0.3/src/processor.rs /root/.cargo/registry/src/index.crates.io-6f17d22bba15001f/spl-token-4.0.3/src/state.rs
+
+/workspaces/research-token/program/target/debug/deps/libspl_token-d5cdce8438c2e4ab.rlib: /root/.cargo/registry/src/index.crates.io-6f17d22bba15001f/spl-token-4.0.3/src/lib.rs /root/.cargo/registry/src/index.crates.io-6f17d22bba15001f/spl-token-4.0.3/src/error.rs /root/.cargo/registry/src/index.crates.io-6f17d22bba15001f/spl-token-4.0.3/src/instruction.rs /root/.cargo/registry/src/index.crates.io-6f17d22bba15001f/spl-token-4.0.3/src/native_mint.rs /root/.cargo/registry/src/index.crates.io-6f17d22bba15001f/spl-token-4.0.3/src/processor.rs /root/.cargo/registry/src/index.crates.io-6f17d22bba15001f/spl-token-4.0.3/src/state.rs
+
+/workspaces/research-token/program/target/debug/deps/spl_token-d5cdce8438c2e4ab.d: /root/.cargo/registry/src/index.crates.io-6f17d22bba15001f/spl-token-4.0.3/src/lib.rs /root/.cargo/registry/src/index.crates.io-6f17d22bba15001f/spl-token-4.0.3/src/error.rs /root/.cargo/registry/src/index.crates.io-6f17d22bba15001f/spl-token-4.0.3/src/instruction.rs /root/.cargo/registry/src/index.crates.io-6f17d22bba15001f/spl-token-4.0.3/src/native_mint.rs /root/.cargo/registry/src/index.crates.io-6f17d22bba15001f/spl-token-4.0.3/src/processor.rs /root/.cargo/registry/src/index.crates.io-6f17d22bba15001f/spl-token-4.0.3/src/state.rs
+
+/root/.cargo/registry/src/index.crates.io-6f17d22bba15001f/spl-token-4.0.3/src/lib.rs:
+/root/.cargo/registry/src/index.crates.io-6f17d22bba15001f/spl-token-4.0.3/src/error.rs:
+/root/.cargo/registry/src/index.crates.io-6f17d22bba15001f/spl-token-4.0.3/src/instruction.rs:
+/root/.cargo/registry/src/index.crates.io-6f17d22bba15001f/spl-token-4.0.3/src/native_mint.rs:
+/root/.cargo/registry/src/index.crates.io-6f17d22bba15001f/spl-token-4.0.3/src/processor.rs:
+/root/.cargo/registry/src/index.crates.io-6f17d22bba15001f/spl-token-4.0.3/src/state.rs:

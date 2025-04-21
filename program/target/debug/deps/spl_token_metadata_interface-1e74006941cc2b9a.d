@@ -1,0 +1,10 @@
+/workspaces/research-token/program/target/debug/deps/libspl_token_metadata_interface-1e74006941cc2b9a.so: /root/.cargo/registry/src/index.crates.io-6f17d22bba15001f/spl-token-metadata-interface-0.2.0/src/lib.rs /root/.cargo/registry/src/index.crates.io-6f17d22bba15001f/spl-token-metadata-interface-0.2.0/src/error.rs /root/.cargo/registry/src/index.crates.io-6f17d22bba15001f/spl-token-metadata-interface-0.2.0/src/instruction.rs /root/.cargo/registry/src/index.crates.io-6f17d22bba15001f/spl-token-metadata-interface-0.2.0/src/state.rs
+
+/workspaces/research-token/program/target/debug/deps/libspl_token_metadata_interface-1e74006941cc2b9a.rlib: /root/.cargo/registry/src/index.crates.io-6f17d22bba15001f/spl-token-metadata-interface-0.2.0/src/lib.rs /root/.cargo/registry/src/index.crates.io-6f17d22bba15001f/spl-token-metadata-interface-0.2.0/src/error.rs /root/.cargo/registry/src/index.crates.io-6f17d22bba15001f/spl-token-metadata-interface-0.2.0/src/instruction.rs /root/.cargo/registry/src/index.crates.io-6f17d22bba15001f/spl-token-metadata-interface-0.2.0/src/state.rs
+
+/workspaces/research-token/program/target/debug/deps/spl_token_metadata_interface-1e74006941cc2b9a.d: /root/.cargo/registry/src/index.crates.io-6f17d22bba15001f/spl-token-metadata-interface-0.2.0/src/lib.rs /root/.cargo/registry/src/index.crates.io-6f17d22bba15001f/spl-token-metadata-interface-0.2.0/src/error.rs /root/.cargo/registry/src/index.crates.io-6f17d22bba15001f/spl-token-metadata-interface-0.2.0/src/instruction.rs /root/.cargo/registry/src/index.crates.io-6f17d22bba15001f/spl-token-metadata-interface-0.2.0/src/state.rs
+
+/root/.cargo/registry/src/index.crates.io-6f17d22bba15001f/spl-token-metadata-interface-0.2.0/src/lib.rs:
+/root/.cargo/registry/src/index.crates.io-6f17d22bba15001f/spl-token-metadata-interface-0.2.0/src/error.rs:
+/root/.cargo/registry/src/index.crates.io-6f17d22bba15001f/spl-token-metadata-interface-0.2.0/src/instruction.rs:
+/root/.cargo/registry/src/index.crates.io-6f17d22bba15001f/spl-token-metadata-interface-0.2.0/src/state.rs:

@@ -1,0 +1,13 @@
+/workspaces/research-token/program/target/debug/deps/libborsh-e5121d2fabb7e93c.rmeta: /root/.cargo/registry/src/index.crates.io-6f17d22bba15001f/borsh-0.10.4/src/lib.rs /root/.cargo/registry/src/index.crates.io-6f17d22bba15001f/borsh-0.10.4/src/de/mod.rs /root/.cargo/registry/src/index.crates.io-6f17d22bba15001f/borsh-0.10.4/src/de/hint.rs /root/.cargo/registry/src/index.crates.io-6f17d22bba15001f/borsh-0.10.4/src/schema.rs /root/.cargo/registry/src/index.crates.io-6f17d22bba15001f/borsh-0.10.4/src/schema_helpers.rs /root/.cargo/registry/src/index.crates.io-6f17d22bba15001f/borsh-0.10.4/src/ser/mod.rs /root/.cargo/registry/src/index.crates.io-6f17d22bba15001f/borsh-0.10.4/src/ser/helpers.rs
+
+/workspaces/research-token/program/target/debug/deps/libborsh-e5121d2fabb7e93c.rlib: /root/.cargo/registry/src/index.crates.io-6f17d22bba15001f/borsh-0.10.4/src/lib.rs /root/.cargo/registry/src/index.crates.io-6f17d22bba15001f/borsh-0.10.4/src/de/mod.rs /root/.cargo/registry/src/index.crates.io-6f17d22bba15001f/borsh-0.10.4/src/de/hint.rs /root/.cargo/registry/src/index.crates.io-6f17d22bba15001f/borsh-0.10.4/src/schema.rs /root/.cargo/registry/src/index.crates.io-6f17d22bba15001f/borsh-0.10.4/src/schema_helpers.rs /root/.cargo/registry/src/index.crates.io-6f17d22bba15001f/borsh-0.10.4/src/ser/mod.rs /root/.cargo/registry/src/index.crates.io-6f17d22bba15001f/borsh-0.10.4/src/ser/helpers.rs
+
+/workspaces/research-token/program/target/debug/deps/borsh-e5121d2fabb7e93c.d: /root/.cargo/registry/src/index.crates.io-6f17d22bba15001f/borsh-0.10.4/src/lib.rs /root/.cargo/registry/src/index.crates.io-6f17d22bba15001f/borsh-0.10.4/src/de/mod.rs /root/.cargo/registry/src/index.crates.io-6f17d22bba15001f/borsh-0.10.4/src/de/hint.rs /root/.cargo/registry/src/index.crates.io-6f17d22bba15001f/borsh-0.10.4/src/schema.rs /root/.cargo/registry/src/index.crates.io-6f17d22bba15001f/borsh-0.10.4/src/schema_helpers.rs /root/.cargo/registry/src/index.crates.io-6f17d22bba15001f/borsh-0.10.4/src/ser/mod.rs /root/.cargo/registry/src/index.crates.io-6f17d22bba15001f/borsh-0.10.4/src/ser/helpers.rs
+
+/root/.cargo/registry/src/index.crates.io-6f17d22bba15001f/borsh-0.10.4/src/lib.rs:
+/root/.cargo/registry/src/index.crates.io-6f17d22bba15001f/borsh-0.10.4/src/de/mod.rs:
+/root/.cargo/registry/src/index.crates.io-6f17d22bba15001f/borsh-0.10.4/src/de/hint.rs:
+/root/.cargo/registry/src/index.crates.io-6f17d22bba15001f/borsh-0.10.4/src/schema.rs:
+/root/.cargo/registry/src/index.crates.io-6f17d22bba15001f/borsh-0.10.4/src/schema_helpers.rs:
+/root/.cargo/registry/src/index.crates.io-6f17d22bba15001f/borsh-0.10.4/src/ser/mod.rs:
+/root/.cargo/registry/src/index.crates.io-6f17d22bba15001f/borsh-0.10.4/src/ser/helpers.rs:

@@ -1,0 +1,26 @@
+[package]
+name = "research-token"
+version = "0.1.0"
+description = "Scientific research tokenization program"
+edition = "2021"
+
+[lib]
+crate-type = ["cdylib", "lib"]
+
+[features]
+no-entrypoint = []
+cpi = ["no-entrypoint"]
+idl-build = ["anchor-lang/idl-build", "anchor-spl/idl-build"]
+
+[dependencies]
+anchor-lang = "0.29.0"
+anchor-spl = "0.29.0"
+solana-program = "1.18.26"
+thiserror = "1.0"
+
+
+[patch.crates-io]
+base64ct = "1.7.2"  # Compatible with Rust 1.79.0
+litemap = "0.7.4"   # Compatible with Rust 1.79.0
+zerofrom = "0.1.5"  # Compatible with Rust 1.79.0
+

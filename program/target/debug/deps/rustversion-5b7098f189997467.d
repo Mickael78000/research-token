@@ -1,0 +1,20 @@
+/workspaces/research-token/program/target/debug/deps/librustversion-5b7098f189997467.so: /root/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/rustversion-1.0.20/src/lib.rs /root/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/rustversion-1.0.20/src/attr.rs /root/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/rustversion-1.0.20/src/bound.rs /root/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/rustversion-1.0.20/src/constfn.rs /root/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/rustversion-1.0.20/src/date.rs /root/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/rustversion-1.0.20/src/error.rs /root/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/rustversion-1.0.20/src/expand.rs /root/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/rustversion-1.0.20/src/expr.rs /root/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/rustversion-1.0.20/src/iter.rs /root/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/rustversion-1.0.20/src/release.rs /root/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/rustversion-1.0.20/src/time.rs /root/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/rustversion-1.0.20/src/token.rs /root/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/rustversion-1.0.20/src/version.rs /workspaces/research-token/program/target/debug/build/rustversion-bd86fc47782f172e/out/version.expr
+
+/workspaces/research-token/program/target/debug/deps/rustversion-5b7098f189997467.d: /root/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/rustversion-1.0.20/src/lib.rs /root/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/rustversion-1.0.20/src/attr.rs /root/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/rustversion-1.0.20/src/bound.rs /root/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/rustversion-1.0.20/src/constfn.rs /root/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/rustversion-1.0.20/src/date.rs /root/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/rustversion-1.0.20/src/error.rs /root/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/rustversion-1.0.20/src/expand.rs /root/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/rustversion-1.0.20/src/expr.rs /root/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/rustversion-1.0.20/src/iter.rs /root/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/rustversion-1.0.20/src/release.rs /root/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/rustversion-1.0.20/src/time.rs /root/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/rustversion-1.0.20/src/token.rs /root/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/rustversion-1.0.20/src/version.rs /workspaces/research-token/program/target/debug/build/rustversion-bd86fc47782f172e/out/version.expr
+
+/root/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/rustversion-1.0.20/src/lib.rs:
+/root/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/rustversion-1.0.20/src/attr.rs:
+/root/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/rustversion-1.0.20/src/bound.rs:
+/root/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/rustversion-1.0.20/src/constfn.rs:
+/root/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/rustversion-1.0.20/src/date.rs:
+/root/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/rustversion-1.0.20/src/error.rs:
+/root/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/rustversion-1.0.20/src/expand.rs:
+/root/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/rustversion-1.0.20/src/expr.rs:
+/root/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/rustversion-1.0.20/src/iter.rs:
+/root/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/rustversion-1.0.20/src/release.rs:
+/root/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/rustversion-1.0.20/src/time.rs:
+/root/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/rustversion-1.0.20/src/token.rs:
+/root/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/rustversion-1.0.20/src/version.rs:
+/workspaces/research-token/program/target/debug/build/rustversion-bd86fc47782f172e/out/version.expr:
+
+# env-dep:OUT_DIR=/workspaces/research-token/program/target/debug/build/rustversion-bd86fc47782f172e/out

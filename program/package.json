@@ -1,0 +1,23 @@
+{
+  "name": "research-token",
+  "version": "0.1.0",
+  "description": "Scientific research tokenization program",
+  "scripts": {
+    "test": "ts-mocha -p ./tsconfig.json -t 1000000 tests/**/*.spec.ts",
+    "build": "anchor build",
+    "deploy": "anchor deploy"
+  },
+  "dependencies": {
+    "@project-serum/anchor": "^0.26.0",
+    "@solana/web3.js": "^1.91.1"
+  },
+  "devDependencies": {
+    "@types/chai": "^4.3.11",
+    "@types/mocha": "^10.0.6",
+    "chai": "^4.3.10",
+    "mocha": "^10.2.0",
+    "ts-mocha": "^10.0.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.3.3"
+  }
+}

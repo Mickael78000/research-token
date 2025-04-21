@@ -1,0 +1,41 @@
+{
+  "name": "scientific-research-tokenization-dapp",
+  "private": true,
+  "version": "0.1.0",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "test": "cd program && npm test"
+  },
+  "dependencies": {
+    "@project-serum/anchor": "^0.25.0",
+    "@solana/wallet-adapter-base": "^0.9.23",
+    "@solana/wallet-adapter-react": "^0.15.35",
+    "@solana/wallet-adapter-react-ui": "^0.9.36",
+    "@solana/wallet-adapter-wallets": "^0.19.31",
+    "@solana/web3.js": "^1.91.1",
+    "@ui-tars/sdk": "latest",
+    "bn.js": "^5.2.1",
+    "framer-motion": "^11.1.6",
+    "lucide-react": "^0.344.0",
+    "next": "14.2.28",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.19",
+    "@types/react": "^18.3.5",
+    "@types/react-dom": "^18.3.0",
+    "autoprefixer": "^10.4.18",
+    "eslint": "^8.57.0",
+    "eslint-config-next": "14.2.28",
+    "postcss": "^8.4.35",
+    "tailwindcss": "^3.4.1",
+    "typescript": "^5.5.3"
+  },
+  "overrides": {
+    "bs58": "6.0.0"
+  }
+}
