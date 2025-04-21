@@ -1,13 +1,9 @@
 import React, { useState } from 'react';
-import { Publication } from '../../types';
+import { Publication, ResearchCardProps } from '../../types';
 import { calculateRIS, isEligibleForTokenization } from '../../utils/researchScoreCalculator';
 import { ChevronDown, ChevronUp, AlertCircle, CheckCircle, Award, Book, Users, BarChart2 } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 
-interface ResearchCardProps {
-  publication: Publication;
-  onFund: () => void;
-}
 
 const ResearchCard: React.FC<ResearchCardProps> = ({ publication, onFund }) => {
   const [expanded, setExpanded] = useState(false);

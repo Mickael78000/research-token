@@ -79,3 +79,8 @@ export interface ResearchData {
   noveltyScore: number;
   fundingAmount?: number;
 }
+
+export interface ResearchCardProps {
+  publication: Publication;
+  onFund: () => void;
+}
