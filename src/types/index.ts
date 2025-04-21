@@ -70,3 +70,12 @@ export interface Toast {
   message: string;
   autoDismiss?: boolean;
 }
+
+// Program Service Types
+export interface ResearchData {
+  title: string;
+  authors: string[];
+  doi: string;
+  noveltyScore: number;
+  fundingAmount?: number;
+}

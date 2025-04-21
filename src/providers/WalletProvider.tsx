@@ -32,28 +32,57 @@ const WalletProvider: React.FC<WalletProviderProps> = ({ children }) => {
     const checkForPhantom = () => {
       if ('solana' in window) {
         console.log('Phantom wallet detected');
+        const solanaProvider = (window as any).solana;
+        if (solanaProvider.isPhantom) {
+          setWallet(solanaProvider);
+          
+          // Setup listeners for wallet changes
+          solanaProvider.on('connect', (publicKey: any) => {
+            console.log('Connected to wallet:', publicKey.toString());
+            setPublicKey(publicKey.toString());
+            setConnected(true);
+          });
+          
+          solanaProvider.on('disconnect', () => {
+            console.log('Disconnected from wallet');
+            setPublicKey(null);
+            setConnected(false);
+          });
+          
+          // If wallet is already connected, update state
+          if (solanaProvider.isConnected) {
+            setPublicKey(solanaProvider.publicKey.toString());
+            setConnected(true);
+          }
+        }
       } else {
         console.log('Phantom wallet not detected');
       }
-    };
-    
+    };    
     checkForPhantom();
+    
+    // Clean up listeners when component unmounts
+    return () => {
+      if (wallet) {
+        wallet.off('connect');
+        wallet.off('disconnect');
+      }
+    };
   }, []);
 
-  // Mock connect function
+  // Real connect function
   const connect = async (): Promise<void> => {
+    if (!wallet) {
+      console.error('Phantom wallet not available');
+      return;
+    }
+    
     setConnecting(true);
     
     try {
-      // In a real implementation, this would connect to Phantom wallet
-      await new Promise(resolve => setTimeout(resolve, 1000)); // Simulate connection delay
-      
-      // Mock successful connection
-      setWallet({
-        name: 'Phantom',
-        icon: '👻',
-      });
-      setPublicKey('5FAB1xA3B8oUKrGvY4pqK4fjQTKNuBubgz4p2hc6jrZb'); // Mock public key
+      // Request connection to the wallet
+      const response = await wallet.connect();
+      setPublicKey(response.publicKey.toString());
       setConnected(true);
     } catch (error) {
       console.error('Failed to connect wallet:', error);
@@ -62,14 +91,15 @@ const WalletProvider: React.FC<WalletProviderProps> = ({ children }) => {
     }
   };
 
-  // Mock disconnect function
+  // Real disconnect function
   const disconnect = async (): Promise<void> => {
+    if (!wallet) {
+      console.error('Phantom wallet not available');
+      return;
+    }
+    
     try {
-      // In a real implementation, this would disconnect from Phantom wallet
-      await new Promise(resolve => setTimeout(resolve, 500)); // Simulate disconnect delay
-      
-      // Reset wallet state
-      setWallet(null);
+      await wallet.disconnect();
       setPublicKey(null);
       setConnected(false);
     } catch (error) {
@@ -77,9 +107,8 @@ const WalletProvider: React.FC<WalletProviderProps> = ({ children }) => {
     }
   };
 
-  // Mock select function
+  // Real select function - for Phantom, this is same as connect
   const select = async (): Promise<void> => {
-    // In a real implementation, this would allow selecting from available wallets
     await connect();
   };
 

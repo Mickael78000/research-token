@@ -3,7 +3,7 @@ import { Connection, PublicKey, Transaction } from '@solana/web3.js';
 import { ResearchData } from '../types';
 
 export class ProgramService {
-  private program: Program;
+  private program!: Program;
   private provider: AnchorProvider;
 
   constructor(connection: Connection, wallet: any) {
