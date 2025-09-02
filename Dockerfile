@@ -1,56 +1,37 @@
-FROM ubuntu:22.04
+# Stage 1: Build environment with Rust, Solana CLI, Anchor, and Agave
+FROM ubuntu:22.04 AS builder
 
-# Prevent interactive prompts during package installation
 ENV DEBIAN_FRONTEND=noninteractive
-
-# Install basic dependencies
-RUN apt-get update && apt-get install -y \
-    curl \
-    git \
-    build-essential \
-    pkg-config \
-    libudev-dev \
-    libssl-dev \
-    python3 \
-    bzip2 \
-    && rm -rf /var/lib/apt/lists/*
-
-# Install Node.js 18
-RUN curl -fsSL https://deb.nodesource.com/setup_18.x | bash - \
-    && apt-get install -y nodejs
-
-# Install Rust and Cargo
-RUN curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh -s -- -y
-ENV PATH="/root/.cargo/bin:${PATH}"
-
-# Install specific Rust version
-RUN rustup default 1.79.0
-
-# Install Solana CLI
-RUN sh -c "$(curl -sSfL https://release.solana.com/v1.18.26/install)"
-ENV PATH="/root/.local/share/solana/install/active_release/bin:${PATH}"
-
-# Install Anchor CLI
-# RUN cargo install --git https://github.com/coral-xyz/anchor avm --locked --force
-# RUN avm install 0.29.0
-# RUN avm use 0.29.0
-
-# Create app directory
-WORKDIR /app
-
-# Copy package files
-COPY package*.json ./
-COPY program/package*.json program/
+ENV PATH="/root/.cargo/bin:/root/.local/share/solana/install/active_release/bin:${PATH}"
 
 # Install dependencies
-# RUN npm install
-# RUN cd program && npm install
+RUN apt-get update && apt-get install -y \
+    curl \
+    build-essential \
+    pkg-config \
+    libssl-dev \
+    llvm \
+    libudev-dev \
+    ca-certificates \
+    git \
+    && rm -rf /var/lib/apt/lists/*
 
-# Copy project files
-COPY . .
+# Install Rust 1.86.0
+RUN curl https://sh.rustup.rs -sSf | sh -s -- -y && \
+    /root/.cargo/bin/rustup install 1.86.0 && \
+    /root/.cargo/bin/rustup default 1.86.0
 
-# Build the program
-# RUN cd program && anchor build
+# Install Agave CLI v2.2.12
+RUN curl -sSfL https://github.com/anza-xyz/agave/releases/download/v2.2.12/agave-install-init-x86_64-unknown-linux-gnu \
+    -o /usr/local/bin/agave-install-init && \
+    chmod +x /usr/local/bin/agave-install-init && \
+    /usr/local/bin/agave-install-init v2.2.12
 
-# Set default command
-CMD ["npm", "run", "dev"]
+# Install Anchor CLI 0.31.1
+RUN cargo install --version 0.31.1 anchor-cli
+
+# Verify installations
+RUN ls -l /root/.local/share/solana/install/active_release/bin && \
+    solana --version && \
+    anchor --version && \
+    rustc --version
