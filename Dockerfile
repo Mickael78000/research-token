@@ -16,6 +16,9 @@ RUN apt-get update && apt-get install -y \
     git \
     && rm -rf /var/lib/apt/lists/*
 
+# Clone the GitHub repository
+RUN git clone https://github.com/Mickael78000/research-token.git /app
+
 # Install Rust 1.86.0
 RUN curl https://sh.rustup.rs -sSf | sh -s -- -y && \
     /root/.cargo/bin/rustup install 1.86.0 && \
