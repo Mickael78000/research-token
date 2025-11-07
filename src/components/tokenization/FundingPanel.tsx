@@ -1,9 +1,11 @@
+ 'use client';
+
 import React, { useState } from 'react';
-import { Publication, ResearchImpactScore } from '../../types';
-import { calculateTokenAmount } from '../../utils/researchScoreCalculator';
-import { useWallet } from '../../providers/WalletProvider';
-import { useToast } from '../../providers/ToastProvider';
-import solanaService from '../../services/solanaService';
+import { Publication, ResearchImpactScore } from '@/types';
+import { calculateTokenAmount, TOKENIZATION_THRESHOLD } from '@/utils/researchScoreCalculator';
+import { useWallet } from '@/providers/WalletProvider';
+import { useToast } from '@/providers/ToastProvider';
+import solanaService from '@/services/solanaService';
 import { Coins, AlertTriangle, FileCheck, ExternalLink } from 'lucide-react';
 import { motion } from 'framer-motion';
 
@@ -311,7 +313,7 @@ const FundingPanel: React.FC<FundingPanelProps> = ({ publication, risScore }) =>
             
             <div className="mt-6 text-sm text-gray-600">
               <p>
-                Research with an RIS score of 7.5 or higher is eligible for tokenization.
+                Research with an RIS score of {TOKENIZATION_THRESHOLD.toFixed(1)} or higher is eligible for tokenization.
                 This research has a score of {risScore.score.toFixed(1)}.
               </p>
             </div>

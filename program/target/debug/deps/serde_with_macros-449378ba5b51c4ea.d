@@ -1,0 +1,7 @@
+/home/michka/Documents/research-token/program/target/debug/deps/serde_with_macros-449378ba5b51c4ea.d: /home/michka/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde_with_macros-2.3.3/src/lib.rs /home/michka/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde_with_macros-2.3.3/src/apply.rs /home/michka/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde_with_macros-2.3.3/src/utils.rs
+
+/home/michka/Documents/research-token/program/target/debug/deps/libserde_with_macros-449378ba5b51c4ea.so: /home/michka/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde_with_macros-2.3.3/src/lib.rs /home/michka/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde_with_macros-2.3.3/src/apply.rs /home/michka/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde_with_macros-2.3.3/src/utils.rs
+
+/home/michka/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde_with_macros-2.3.3/src/lib.rs:
+/home/michka/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde_with_macros-2.3.3/src/apply.rs:
+/home/michka/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde_with_macros-2.3.3/src/utils.rs:

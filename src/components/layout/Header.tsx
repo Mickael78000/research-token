@@ -1,10 +1,14 @@
+'use client';
+
 import React from 'react';
-import { useWallet } from '../../providers/WalletProvider';
+import { useWallet } from '@/providers/WalletProvider';
 import { Brain, Microscope } from 'lucide-react';
 import { motion } from 'framer-motion';
 
 const Header: React.FC = () => {
   const { connected, connecting, publicKey, connect, disconnect } = useWallet();
+
+  const displayKey = publicKey ? `${publicKey.slice(0, 4)}...${publicKey.slice(-4)}` : '';
 
   const handleConnectWallet = async () => {
     if (connected) {
@@ -60,7 +64,7 @@ const Header: React.FC = () => {
               ) : connected ? (
                 <span className="flex items-center">
                   <span className="bg-green-500 h-2 w-2 rounded-full mr-2"></span>
-                  {publicKey?.substring(0, 4)}...{publicKey?.substring(publicKey.length - 4)}
+                  {displayKey}
                 </span>
               ) : (
                 'Connect Wallet'

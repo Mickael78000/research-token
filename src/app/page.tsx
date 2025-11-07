@@ -2,7 +2,7 @@
 
 import Header from '@/components/layout/Header';
 import Footer from '@/components/layout/Footer';
-import Dashboard from '@/pages/Dashboard';
+import Dashboard from '@/views/Dashboard';
 
 export default function Home() {
   return (

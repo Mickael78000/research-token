@@ -1,0 +1,10 @@
+/home/michka/Documents/research-token/program/target/debug/deps/anchor_spl-9275c4b6e9d43d7b.d: /home/michka/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/anchor-spl-0.29.0/src/lib.rs /home/michka/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/anchor-spl-0.29.0/src/associated_token.rs /home/michka/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/anchor-spl-0.29.0/src/mint.rs /home/michka/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/anchor-spl-0.29.0/src/token.rs /home/michka/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/anchor-spl-0.29.0/src/token_2022.rs /home/michka/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/anchor-spl-0.29.0/src/token_interface.rs
+
+/home/michka/Documents/research-token/program/target/debug/deps/libanchor_spl-9275c4b6e9d43d7b.rmeta: /home/michka/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/anchor-spl-0.29.0/src/lib.rs /home/michka/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/anchor-spl-0.29.0/src/associated_token.rs /home/michka/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/anchor-spl-0.29.0/src/mint.rs /home/michka/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/anchor-spl-0.29.0/src/token.rs /home/michka/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/anchor-spl-0.29.0/src/token_2022.rs /home/michka/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/anchor-spl-0.29.0/src/token_interface.rs
+
+/home/michka/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/anchor-spl-0.29.0/src/lib.rs:
+/home/michka/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/anchor-spl-0.29.0/src/associated_token.rs:
+/home/michka/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/anchor-spl-0.29.0/src/mint.rs:
+/home/michka/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/anchor-spl-0.29.0/src/token.rs:
+/home/michka/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/anchor-spl-0.29.0/src/token_2022.rs:
+/home/michka/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/anchor-spl-0.29.0/src/token_interface.rs:

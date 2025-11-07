@@ -1,0 +1,11 @@
+/home/michka/Documents/research-token/program/target/debug/deps/ed25519_dalek-96089514cc44470a.d: /home/michka/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/ed25519-dalek-1.0.1/src/lib.rs /home/michka/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/ed25519-dalek-1.0.1/src/constants.rs /home/michka/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/ed25519-dalek-1.0.1/src/keypair.rs /home/michka/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/ed25519-dalek-1.0.1/src/errors.rs /home/michka/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/ed25519-dalek-1.0.1/src/public.rs /home/michka/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/ed25519-dalek-1.0.1/src/secret.rs /home/michka/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/ed25519-dalek-1.0.1/src/signature.rs
+
+/home/michka/Documents/research-token/program/target/debug/deps/libed25519_dalek-96089514cc44470a.rmeta: /home/michka/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/ed25519-dalek-1.0.1/src/lib.rs /home/michka/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/ed25519-dalek-1.0.1/src/constants.rs /home/michka/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/ed25519-dalek-1.0.1/src/keypair.rs /home/michka/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/ed25519-dalek-1.0.1/src/errors.rs /home/michka/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/ed25519-dalek-1.0.1/src/public.rs /home/michka/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/ed25519-dalek-1.0.1/src/secret.rs /home/michka/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/ed25519-dalek-1.0.1/src/signature.rs
+
+/home/michka/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/ed25519-dalek-1.0.1/src/lib.rs:
+/home/michka/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/ed25519-dalek-1.0.1/src/constants.rs:
+/home/michka/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/ed25519-dalek-1.0.1/src/keypair.rs:
+/home/michka/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/ed25519-dalek-1.0.1/src/errors.rs:
+/home/michka/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/ed25519-dalek-1.0.1/src/public.rs:
+/home/michka/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/ed25519-dalek-1.0.1/src/secret.rs:
+/home/michka/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/ed25519-dalek-1.0.1/src/signature.rs:

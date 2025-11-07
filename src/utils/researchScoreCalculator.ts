@@ -5,7 +5,7 @@ const NOVELTY_WEIGHT = 0.4;
 const CITATIONS_WEIGHT = 0.3;
 const PEER_REVIEWS_WEIGHT = 0.2;
 const JOURNAL_IMPACT_WEIGHT = 0.1;
-const TOKENIZATION_THRESHOLD = 6.0; // Lowered from 7.5 to 6.0
+export const TOKENIZATION_THRESHOLD = 6.0; // Lowered from 7.5 to 6.0
 
 // Normalize a score to a 0-10 scale
 export const normalizeScore = (

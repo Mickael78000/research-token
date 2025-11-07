@@ -1,4 +1,5 @@
 import { TokenizationResult } from '../types';
+import { calculateTokenAmount } from '../utils/researchScoreCalculator';
 
 // Mock wallet for demo purposes
 interface MockWallet {
@@ -27,8 +28,8 @@ class SolanaService {
           '0123456789abcdef'[Math.floor(Math.random() * 16)]
         ).join('');
         
-        // Calculate token amount (10 tokens per SOL multiplied by RIS factor)
-        const tokenAmount = parseFloat((fundingAmount * 10 * (risScore / 7.5)).toFixed(2));
+        // Calculate token amount using shared utility for consistency
+        const tokenAmount = calculateTokenAmount(risScore, fundingAmount);
         
         resolve({
           success: true,

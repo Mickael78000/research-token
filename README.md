@@ -1,96 +1,120 @@
-# token-vesting
+# Scientific Research Tokenization DApp
 
-This project is generated with the [create-solana-dapp](https://github.com/solana-developers/create-solana-dapp) generator.
+Discover scientific publications, assess impact with an on-platform Research Impact Score (RIS), and simulate funding to mint RES tokens. Built with Next.js (App Router), TailwindCSS, and TypeScript. Blockchain and AI integrations are currently mocked for a smooth demo experience.
+
+## Features
+
+- **Research discovery (mocked)**
+  Search relevant publications via a simulated TARS AI service.
+  File: `src/services/tarsAI.ts` (mock data, easy to swap to a real API).
+
+- **Impact scoring (RIS)**
+  Deterministic scoring using weighted metrics with configurable threshold.
+  File: `src/utils/researchScoreCalculator.ts`.
+  Weights: Novelty 0.4, Citations 0.3, Peer Reviews 0.2, Journal Impact 0.1.
+  Threshold: `TOKENIZATION_THRESHOLD = 6.0`.
+
+- **Funding flows (simulated)**
+  - Crypto: simulate funding and token minting; returns a mock tx signature and RES token amount.
+  - Fiat: simulate payment and token amount.
+  File: `src/components/tokenization/FundingPanel.tsx` + `src/services/solanaService.ts`.
+
+- **Token mint calculation**
+  Shared utility ensures consistent math across the app:
+  `calculateTokenAmount(risScore, fundingAmount)`.
+
+- **Wallet connect (Phantom-like, simulated)**
+  Minimal provider that detects `window.solana` and offers connect/disconnect state.
+  File: `src/providers/WalletProvider.tsx`.
+
+- **Toasts & UX**
+  App-level toast system for success/error messages.
+  File: `src/providers/ToastProvider.tsx`.
+
+- **UI & animations**
+  TailwindCSS + Framer Motion + Lucide icons with a clean App Router layout.
+
+## Tech Stack
+
+- Next.js 13 (App Router) • React 18 • TypeScript 5
+- TailwindCSS 3 • Framer Motion • Lucide Icons
+- Optional Solana stack (future): `@solana/web3.js`, Anchor (see `program/`)
+
+## Project Structure
+
+```
+src/
+  app/
+    layout.tsx         # App shell with global providers (Wallet, Toast)
+    page.tsx           # Home page -> renders Dashboard view
+    globals.css        # Tailwind base layers
+  views/
+    Dashboard.tsx      # Main experience (search, list, fund)
+  components/
+    layout/            # Header, Footer
+    research/          # SearchSection, ResearchList, ResearchCard
+    tokenization/      # FundingPanel
+  providers/           # WalletProvider, ToastProvider
+  services/            # tarsAI (mock), solanaService (mock), programService (Anchor skeleton)
+  utils/               # researchScoreCalculator (RIS + token math)
+program/               # Solana program workspace (not wired to UI yet)
+```
 
 ## Getting Started
 
 ### Prerequisites
 
-- Node v18.18.0 or higher
+- Node.js 18.x (see `.nvmrc`)
 
-- Rust v1.77.2 or higher
-- Anchor CLI 0.30.0 or higher
-- Solana CLI 1.18.9 or higher
+### Install & Run
 
-### Installation
-
-#### Clone the repo
-
-```shell
-git clone <repo-url>
-cd <repo-name>
-```
-
-#### Install Dependencies
-
-```shell
+```bash
 npm install
-```
-
-#### Start the web app
-
-```
 npm run dev
+# http://localhost:3000
 ```
 
-## Apps
+### Build & Lint
 
-### anchor
-
-This is a Solana program written in Rust using the Anchor framework.
-
-#### Commands
-
-You can use any normal anchor commands. Either move to the `anchor` directory and run the `anchor` command or prefix the command with `npm run`, eg: `npm run anchor`.
-
-#### Sync the program id:
-
-Running this command will create a new keypair in the `anchor/target/deploy` directory and save the address to the Anchor config file and update the `declare_id!` macro in the `./src/lib.rs` file of the program.
-
-You will manually need to update the constant in `anchor/lib/vesting-exports.ts` to match the new program id.
-
-```shell
-npm run anchor keys sync
-```
-
-#### Build the program:
-
-```shell
-npm run anchor-build
-```
-
-#### Start the test validator with the program deployed:
-
-```shell
-npm run anchor-localnet
-```
-
-#### Run the tests
-
-```shell
-npm run anchor-test
-```
-
-#### Deploy to Devnet
-
-```shell
-npm run anchor deploy --provider.cluster devnet
-```
-
-### web
-
-This is a React app that uses the Anchor generated client to interact with the Solana program.
-
-#### Commands
-
-Start the web app
-
-```shell
-npm run dev
-```
-
-Build the web app
-
-```shell
+```bash
 npm run build
+npm run lint
 ```
+
+## How It Works
+
+- **Search**: `SearchSection` calls `PublicationService.searchScientificPublications` (mock) and renders results in `ResearchList`/`ResearchCard`.
+- **RIS**: `calculateRIS(publication)` normalizes inputs and applies weights to compute a 0–10 score. Tokenization eligibility is `score >= TOKENIZATION_THRESHOLD`.
+- **Funding**:
+  - Crypto path simulates a Solana transaction (`solanaService.tokenizeResearch`) and yields a mock signature + RES amount.
+  - Fiat path simulates a delay and uses the same token calculation utility for parity.
+- **Tokens**: `calculateTokenAmount(risScore, fundingAmount)` computes RES awarded (e.g., baseline 10 tokens per SOL scaled by RIS threshold factor).
+
+## Configuration & Env
+
+- The app runs with mock services by default—no env required.
+- To integrate a real AI backend later, prefer these public env names (client-safe):
+  - `NEXT_PUBLIC_TARS_API_KEY`
+  - `NEXT_PUBLIC_TARS_API_URL`
+  Update `src/services/tarsAI.ts` accordingly (the old Vite-style `import.meta.env` is not used).
+
+## Solana Program (Optional / Future)
+
+- The `program/` workspace contains an Anchor-based program scaffold. The UI does not call it yet.
+- `src/services/programService.ts` shows how an Anchor client could be organized; it is not wired into the app.
+- When you decide to integrate on-chain flows:
+  - Replace `solanaService` mocks with real `@solana/web3.js`/Anchor calls.
+  - Surface real tx signatures and explorer links.
+
+## Roadmap
+
+- Connect to a real TARS AI or LLM-powered research index.
+- Implement real on-chain tokenization via Anchor program.
+- Add tests and CI typechecking.
+- Upgrade Next.js and align ESLint config if desired.
+
+## Notes & Safety
+
+- Current blockchain and AI actions are simulated for demo purposes. No real funds are moved.
+- Ensure you understand and audit any on-chain integration before going live.
+

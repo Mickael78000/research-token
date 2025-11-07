@@ -1,7 +1,9 @@
+'use client';
+
 import React, { useState } from 'react';
 import { Search } from 'lucide-react';
-import { Publication } from '../../types';
-import tarsAIService from '../../services/tarsAI';
+import { Publication } from '@/types';
+import tarsAIService from '@/services/tarsAI';
 import { motion } from 'framer-motion';
 
 interface SearchSectionProps {
